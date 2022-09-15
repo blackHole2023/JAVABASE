@@ -20,6 +20,6 @@ public class TransformFunction {
             System.out.println(i);
             return new O();
         });
-        O o = f2.apply(new I());
+        O o = f2.apply(new I());//好难理解这个。。。。
     }
 }
