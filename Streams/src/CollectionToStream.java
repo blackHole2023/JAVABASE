@@ -7,13 +7,13 @@ public class CollectionToStream {
                 new Bubble(1), new Bubble(2), new Bubble(3));
         System.out.println(
                 bubbles.stream()
-                        .mapToInt(b -> b.i)
+                        .mapToInt(b -> b.i)//mapToInt参数是一个函数
                         .sum());
 
         Set<String> w = new HashSet<>(Arrays.asList(
                 "It's a wonderful day for pie!".split(" ")));
         w.stream()
-                .map(x -> x + " ")
+                .map(x -> x + " ")//lambda表达式-函数式编程
                 .forEach(System.out::print);
         System.out.println();
 
