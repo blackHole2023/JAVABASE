@@ -12,8 +12,8 @@ public class RandomWords implements Supplier<String> {
                 Files.readAllLines(Paths.get(fname));
         // Skip the first line:
         for(String line : lines.subList(1, lines.size())) {
-            for(String word : line.split("[ .?,]+"))
-                words.add(word.toLowerCase());
+            for(String word : line.split("[ .?,]+"))//断句
+                words.add(word.toLowerCase());//加到words list中
         }
     }
     @Override public String get() {
@@ -26,7 +26,7 @@ public class RandomWords implements Supplier<String> {
     public static void
     main(String[] args) throws Exception {
         System.out.println(
-                Stream.generate(new RandomWords("Cheese.dat"))
+                Stream.generate(new RandomWords("E:\\Javastudy\\GitHub\\JAVABASE\\Streams\\src\\Cheese.dat"))
                         .limit(10)
                         .collect(Collectors.joining(" ")));
     }
