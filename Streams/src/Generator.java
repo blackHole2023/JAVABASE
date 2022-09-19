@@ -15,6 +15,6 @@ public class Generator implements Supplier<String> {
         Stream<String> generate = Stream.generate(generator);
         System.out.println(generate);
         Stream<String> limit = generate.limit(30);
-        String collect = limit.collect(Collectors.joining());
+        List<String> collect = limit.collect(Collectors.toList());
         System.out.println(collect);
     } }
