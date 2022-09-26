@@ -1,3 +1,5 @@
+package Streams;
+
 class Peeking  {
     public static void
     main(String[] args) throws Exception {

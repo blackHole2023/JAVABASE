@@ -1,4 +1,4 @@
-import java.util.stream.*;
+package Streams;
 
 public class FileToWordsTest {
     public static void

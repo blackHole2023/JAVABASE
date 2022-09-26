@@ -1,12 +1,13 @@
+package Streams;
+
 import java.util.*;
-import java.util.stream.*;
 
 public class StreamOfOptionals {
     public static void main(String[] args) {
-        Signal.stream()
+        Signal.stream()//静态方法
                 .limit(10)
-                .forEach(System.out::println);
-        System.out.println(" ---");
+                .forEach(System.out::println);//重写了tostring方法
+        System.out.println(" 你好---");
         Signal.stream()
                 .limit(10)
                 .filter(Optional::isPresent)

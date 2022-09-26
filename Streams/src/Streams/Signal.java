@@ -1,6 +1,7 @@
+package Streams;
+
 import java.util.*;
 import java.util.stream.*;
-import java.util.function.*;
 
 public class Signal {
     private final String msg;
@@ -14,11 +15,13 @@ public class Signal {
         switch(rand.nextInt(4)) {
             case 1: return new Signal("dot");
             case 2: return new Signal("dash");
+            case 3: return new Signal("Pig");
+            case 4: return new Signal("Pig");
             default: return null;
         }
     }
     public static Stream<Optional<Signal>> stream() {
-        return Stream.generate(Signal::morse)
+        return Stream.generate(Signal::morse)//函数式编程，里面是Supplier
                 .map(signal -> Optional.ofNullable(signal));
     }
 }

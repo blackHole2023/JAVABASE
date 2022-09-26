@@ -1,5 +1,6 @@
+package Streams;
+
 import java.util.*;
-import java.util.stream.*;
 
 public class CollectionToStream {
     public static void main(String[] args) {

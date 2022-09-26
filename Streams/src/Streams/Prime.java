@@ -1,3 +1,5 @@
+package Streams;
+
 import java.util.stream.*;
 import static java.util.stream.LongStream.*;
 

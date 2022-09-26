@@ -1,4 +1,4 @@
-import java.util.function.*;
+package Streams;
 
 public class Bubble {
     public final int i;

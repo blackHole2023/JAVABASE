@@ -1,4 +1,5 @@
-import java.util.*;
+package Streams;
+
 import java.util.stream.*;
 
 class Numbered {

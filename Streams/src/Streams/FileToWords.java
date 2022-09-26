@@ -1,3 +1,5 @@
+package Streams;
+
 import java.nio.file.*;
 import java.util.stream.*;
 import java.util.regex.Pattern;

@@ -1,3 +1,5 @@
+package Streams;
+
 import java.util.*;
 import java.util.stream.*;
 
