@@ -6,7 +6,7 @@ public class InheritingExceptions {
     public void f() throws SimpleException {
         System.out.println(
                 "Throw SimpleException from f()");
-        throw new SimpleException();
+        throw new SimpleException();//人工制造异常
     }
     public static void main(String[] args) {
         InheritingExceptions sed =
