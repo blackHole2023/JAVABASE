@@ -97,7 +97,7 @@ public class GreenhouseControls extends Controller {
     public class Restart extends Event {
         private Event[] eventList;
         public
-        Restart(long delayTime, Event[] eventList) {//重新装填事件。
+        Restart(long delayTime, Event[] eventList) {//重新装填事件。装填外部事件
             super(delayTime);
             this.eventList = eventList;
             for(Event e : eventList)
