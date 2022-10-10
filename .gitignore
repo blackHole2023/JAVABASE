@@ -14,7 +14,7 @@
 /hiding/target
 /hiding/hiding.iml
 /reuse/target
-/reuse/reuse.iml
+/*/reuse.iml
 /polymorphism/target
 /polymorphism/polymorphism.iml
 /interfaces/target
@@ -24,3 +24,4 @@
 /collections/target/
 /collections/collections.iml
 /reflection/reflection.iml
+/*/target/**

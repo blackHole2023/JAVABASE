@@ -19,13 +19,15 @@ public class SimpleIteration {
         for(Pet p : pets)
             System.out.print(p.id() + ":" + p + " ");
         System.out.println();
+
+        System.out.println("pets0:"+pets);
         // An Iterator can also remove elements:
         it = pets.iterator();
         for(int i = 0; i < 6; i++) {
             it.next();
             it.remove();
         }
-        System.out.println(pets);
+        System.out.println("pets:"+pets);
     }
 }
 /* Output:
