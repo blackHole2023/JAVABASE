@@ -1,5 +1,9 @@
 package strings;
 
+import generics.coffee.Coffee;
+import generics.coffee.CoffeeSupplier;
+
+import java.util.List;
 import java.util.stream.*;
 
 public class ArrayListDisplay {
