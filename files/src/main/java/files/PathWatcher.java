@@ -11,7 +11,7 @@ public class PathWatcher {
     static Path test = Paths.get("test");
     static void delTxtFiles() {
         try {
-            Files.walk(test)
+            Files.walk(test)//遍历文件，筛选.txt结尾的文件，并且删除
                     .filter(f ->
                             f.toString().endsWith(".txt"))
                     .forEach(f -> {
@@ -30,13 +30,13 @@ public class PathWatcher {
     main(String[] args) throws Exception {
         Directories.refreshTestDir();
         Directories.populateTestDir();
-        Files.createFile(test.resolve("Hello.txt"));
+        Files.createFile(test.resolve("Hello.txt"));//resolve() 将文件名添加到 test Path 的末尾。
         WatchService watcher =
                 FileSystems.getDefault().newWatchService();
-        test.register(watcher, ENTRY_DELETE);
+        test.register(watcher, ENTRY_DELETE);//绑定监视器和事件
         Executors.newSingleThreadScheduledExecutor()
                 .schedule(
-                        PathWatcher::delTxtFiles,
+                        PathWatcher::delTxtFiles,//函数式编程
                         250, TimeUnit.MILLISECONDS);
         WatchKey key = watcher.take();
         for(WatchEvent evt : key.pollEvents()) {
