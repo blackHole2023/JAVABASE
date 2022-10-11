@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 public class InfiniteRecursion {
     @Override public String toString() {
         return
-                " InfiniteRecursion address: " + this + "\n";//发生递归，报错
+                " InfiniteRecursion address: " + this + "\n";//发生递归，报错。+会发生类型转发，调用tostring方法。
     }
     public static void main(String[] args) {
         Stream.generate(InfiniteRecursion::new)
