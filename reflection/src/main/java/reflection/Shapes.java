@@ -4,7 +4,7 @@ import java.util.stream.*;
 
 abstract class Shape {
     void draw() {
-        System.out.println(this + ".draw()");
+        System.out.println(this + ".draw()");//打印对象会调用tostring方法。
     }
 
     @Override public abstract String toString();
