@@ -7,7 +7,7 @@
 package reflection.pets;
 import java.util.*;
 
-public class PetCreator extends Creator {
+public class PetCreator extends Creator {//创建类型数组
   // No try block needed.
   public static final
   List<Class<? extends Pet>> ALL_TYPES =
