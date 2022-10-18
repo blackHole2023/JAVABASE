@@ -9,12 +9,12 @@ import java.util.*;
 import java.util.stream.*;
 
 public class CollectionMethodDifferences {
-  static Set<String> methodSet(Class<?> type) {
+  static Set<String> methodSet(Class<?> type) {//方法集合
     return Arrays.stream(type.getMethods())
       .map(Method::getName)
       .collect(Collectors.toCollection(TreeSet::new));
   }
-  static void interfaces(Class<?> type) {
+  static void interfaces(Class<?> type) {//接口集合
     System.out.print("Interfaces in " +
       type.getSimpleName() + ": ");
     System.out.println(

@@ -10,7 +10,7 @@ import static generics.watercolors.Watercolors.*;
 public class WatercolorSets {
   public static void main(String[] args) {
     Set<Watercolors> set1 =
-      EnumSet.range(BRILLIANT_RED, VIRIDIAN_HUE);
+      EnumSet.range(BRILLIANT_RED, VIRIDIAN_HUE);//泛型和枚举结合。
     Set<Watercolors> set2 =
       EnumSet.range(CERULEAN_BLUE_HUE, BURNT_UMBER);
     System.out.println("set1: " + set1);
