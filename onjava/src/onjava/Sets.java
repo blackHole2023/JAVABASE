@@ -5,7 +5,7 @@
 package onjava;
 import java.util.*;
 
-public class Sets {
+public class Sets {//交并补差
   public static <T> Set<T> union(Set<T> a, Set<T> b) {
     Set<T> result = new HashSet<>(a);
     result.addAll(b);

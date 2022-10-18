@@ -10,7 +10,7 @@ import java.util.stream.*;
 import java.lang.reflect.InvocationTargetException;
 
 public class CoffeeSupplier
-implements Supplier<Coffee>, Iterable<Coffee> {
+implements Supplier<Coffee>, Iterable<Coffee> {//继承了Supplier接口，以及Iterable接口，所以能用foreach循环了。
   private Class<?>[] types = { Latte.class, Mocha.class,
     Cappuccino.class, Americano.class, Breve.class, };
   private static Random rand = new Random(47);
@@ -22,7 +22,7 @@ implements Supplier<Coffee>, Iterable<Coffee> {
     try {
       return (Coffee)
         types[rand.nextInt(types.length)]
-        .getConstructor().newInstance();
+        .getConstructor().newInstance();//利用反射创造实例。
       // Report programmer errors at runtime:
       } catch(InstantiationException |
               NoSuchMethodException |
@@ -48,9 +48,9 @@ implements Supplier<Coffee>, Iterable<Coffee> {
     return new CoffeeIterator();
   }
   public static void main(String[] args) {
-    Stream.generate(new CoffeeSupplier())
+    Stream.generate(new CoffeeSupplier())//利用流编程。
       .limit(5)
-      .forEach(System.out::println);
+      .forEach(System.out::println);//雨绵绵的foreach是实现同样的功能。
     for(Coffee c : new CoffeeSupplier(5))
       System.out.println(c);
   }

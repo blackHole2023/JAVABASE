@@ -6,7 +6,7 @@ package generics;// generics/IterableFibonacci.java
 import java.util.*;
 
 public class IterableFibonacci
-extends Fibonacci implements Iterable<Integer> {
+extends Fibonacci implements Iterable<Integer> {//无非就是新创建一个类，多继承一个接口
   private int n;
   public IterableFibonacci(int count) { n = count; }
   @Override public Iterator<Integer> iterator() {

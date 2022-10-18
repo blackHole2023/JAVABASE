@@ -4,7 +4,7 @@ package generics;// generics/GenericMethods.java
 // Visit http://OnJava8.com for more book information.
 
 public class GenericMethods {
-  public <T> void f(T x) {
+  public <T> void f(T x) {//使用泛型方法时，通常不需要指定参数类型，因为编译器会找出这些类型。
     System.out.println(x.getClass().getName());
   }
   public static void main(String[] args) {
