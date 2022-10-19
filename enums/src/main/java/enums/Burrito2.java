@@ -15,6 +15,8 @@ public class Burrito2 {
     return "Burrito is "+ degree;
   }
   public static void main(String[] args) {
+    System.out.println(SpicinessEnum.values());
+    System.out.println(NOT.getClass());
     System.out.println(new Burrito2(NOT));
     System.out.println(new Burrito2(MEDIUM));
     System.out.println(new Burrito2(HOT));

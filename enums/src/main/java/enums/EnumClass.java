@@ -1,10 +1,10 @@
-// enums/EnumClass.java
+package enums;// enums/EnumClass.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Capabilities of the Enum class
 
-enum Shrubbery { GROUND, CRAWLING, HANGING }
+enum Shrubbery { GROUND, CRAWLING, HANGING }//感觉枚举就是自己创建了个类啊
 
 public class EnumClass {
   public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class EnumClass {
         "HANGING CRAWLING GROUND".split(" ")) {
       Shrubbery shrub =
         Enum.valueOf(Shrubbery.class, s);
+//      System.out.println(shrub);
       System.out.println(shrub);
     }
   }

@@ -1,4 +1,4 @@
-// enums/OzWitch.java
+package enums;// enums/OzWitch.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -13,7 +13,7 @@ public enum OzWitch {
   SOUTH("Good by inference, but missing");
   private String description;
   // Constructor must be package or private access:
-  private OzWitch(String description) {
+  private OzWitch(String description) {//枚举的构造器
     this.description = description;
   }
   public String getDescription() { return description; }
