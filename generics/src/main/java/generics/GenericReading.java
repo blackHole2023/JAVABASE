@@ -15,7 +15,7 @@ public class GenericReading {
   static void f1() {
     Apple a = readExact(apples);
     Fruit f = readExact(fruit);
-    f = readExact(apples);
+    f = readExact(apples);//普通的向上转型，满足安全性要求。
   }
   // A class type is established
   // when the class is instantiated:

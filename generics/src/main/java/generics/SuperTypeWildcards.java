@@ -5,7 +5,7 @@ package generics;// generics/SuperTypeWildcards.java
 import java.util.*;
 
 public class SuperTypeWildcards {
-  static void writeTo(List<? super Apple> apples) {
+  static void writeTo(List<? super Apple> apples) {//比Apple高，只存在向上转型，某些事确定的。
     apples.add(new Apple());
     apples.add(new Jonathan());
     // apples.add(new Fruit()); // Error
