@@ -58,7 +58,7 @@ public class Store extends ArrayList<Aisle> {
   public Store(
     int nAisles, int nShelves, int nProducts) {
     for(int i = 0; i < nAisles; i++)
-      add(new Aisle(nShelves, nProducts));
+      add(new Aisle(nShelves, nProducts));//Store里面，集成了ArrayList，所以能用add方法。
   }
   @Override public String toString() {
     StringBuilder result = new StringBuilder();

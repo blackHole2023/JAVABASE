@@ -4,7 +4,8 @@ package generics;// generics/LostInformation.java
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 
-class Frob {}
+//class Frob<A,B> {}
+class Frob<A> {}
 class Fnorkle {}
 class Quark<Q> {}
 class Particle<POSITION, MOMENTUM> {}

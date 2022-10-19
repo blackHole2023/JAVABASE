@@ -8,7 +8,7 @@ package generics;// generics/Manipulation.java
 //  private T obj;
 //  Manipulator(T x) { obj = x; }
 //  // Error: cannot find symbol: method f():
-//  public void manipulate() { obj.f(); }
+//  public void manipulate() { obj.f(); }//并不知道T中是否有f().编译就会报错。
 //}
 //
 //public class Manipulation {
