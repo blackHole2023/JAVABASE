@@ -1,4 +1,4 @@
-// enums/ConstantSpecificMethod.java
+package enums;// enums/ConstantSpecificMethod.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -25,7 +25,7 @@ public enum ConstantSpecificMethod {
   };
   abstract String getInfo();
   public static void main(String[] args) {
-    for(ConstantSpecificMethod csm : values())
+    for(ConstantSpecificMethod csm : values())//values方法是编译器加上去的
       System.out.println(csm.getInfo());
   }
 }
