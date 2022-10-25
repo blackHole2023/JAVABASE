@@ -1,4 +1,4 @@
-// enums/NotClasses.java
+package enums;// enums/NotClasses.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -25,7 +25,7 @@ enum LikeClasses {
 }
 
 public class NotClasses {
-  // void f1(LikeClasses.WINKEN instance) {} // Nope
+//   void f1(LikeClasses.WINKEN instance) {} // Nope
 }
 /* Output: (First 12 Lines)
 Compiled from "NotClasses.java"

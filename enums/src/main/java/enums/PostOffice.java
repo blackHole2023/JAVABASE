@@ -1,4 +1,4 @@
-// enums/PostOffice.java
+package enums;// enums/PostOffice.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -6,7 +6,7 @@
 import java.util.*;
 import onjava.*;
 
-class Mail {
+class Mail {//邮件类
   // The NO's reduce probability of random selection:
   enum GeneralDelivery {YES,NO1,NO2,NO3,NO4,NO5}
   enum Scannability {UNSCANNABLE,YES1,YES2,YES3,YES4}
@@ -67,7 +67,7 @@ class Mail {
   }
 }
 
-public class PostOffice {
+public class PostOffice {//邮局类
   enum MailHandler {
     GENERAL_DELIVERY {
       @Override boolean handle(Mail m) {
