@@ -1,4 +1,4 @@
-// enums/Input.java
+package enums;// enums/Input.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -20,7 +20,7 @@ public enum Input {
   };
   int value; // In cents
   Input(int value) { this.value = value; }
-  Input() {}
+  Input() {}//无参构造
   int amount() { return value; }; // In cents
   static Random rand = new Random(47);
   public static Input randomSelection() {

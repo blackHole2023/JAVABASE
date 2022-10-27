@@ -7,7 +7,7 @@
 package enums;
 import static enums.Outcome.*;
 
-public enum RoShamBo3 implements Competitor<RoShamBo3> {
+public enum RoShamBo3 implements Competitor<RoShamBo3> {//穷举出所有可能性
   PAPER {
     @Override public Outcome compete(RoShamBo3 it) {
       switch(it) {
