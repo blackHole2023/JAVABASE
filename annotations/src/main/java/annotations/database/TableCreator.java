@@ -19,18 +19,18 @@ public class TableCreator {
       System.exit(0);
     }
     for(String className : args) {
-      Class<?> cl = Class.forName(className);
-      DBTable dbTable = cl.getAnnotation(DBTable.class);
+      Class<?> cl = Class.forName(className);//类加载
+      DBTable dbTable = cl.getAnnotation(DBTable.class);//获得注解类
       if(dbTable == null) {
         System.out.println(
           "No DBTable annotations in class " +
           className);
         continue;
       }
-      String tableName = dbTable.name();
+      String tableName = dbTable.name();//获得注解的值
       // If the name is empty, use the Class name:
-      if(tableName.length() < 1)
-        tableName = cl.getName().toUpperCase();
+      if(tableName.length() < 1)//字段长度小于1时。
+        tableName = cl.getName().toUpperCase();//类的名称
       List<String> columnDefs = new ArrayList<>();
       for(Field field : cl.getDeclaredFields()) {
         String columnName = null;

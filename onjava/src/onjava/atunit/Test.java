@@ -6,6 +6,6 @@
 package onjava.atunit;
 import java.lang.annotation.*;
 
-@Target(ElementType.METHOD)
+@Target(ElementType.METHOD)//使用范围
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Test {}

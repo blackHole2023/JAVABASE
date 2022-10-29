@@ -6,7 +6,7 @@
 // build/classes/java/main/annotations/AtUnitExample1.class}
 package annotations;
 import onjava.*;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AtUnitExample1 {
   public String methodOne() {
@@ -18,7 +18,7 @@ public class AtUnitExample1 {
   }
   @Test
   boolean methodOneTest() {
-    return methodOne().equals("This is methodOne");
+    return methodOne().equals("This is methodOne");//不需要初始化了吗？main中要初始化，因为main是static方法。
   }
   @Test
   boolean m2() { return methodTwo() == 2; }
